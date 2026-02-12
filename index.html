@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>สเต็กเด็กแนว สาขาสนามฟุตบอลไพรมารี่ ปลวกแดง</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>สเต็กเด็กแนว สาขาสนามฟุตบอลไพรมารี่ ปลวกแดง</h1>
+    <div class="lang-buttons">
+        <button onclick="setLanguage('th')">ไทย</button>
+        <button onclick="setLanguage('en')">EN</button>
+        <button onclick="setLanguage('zh')">中文</button>
+    </div>
+
+</div>
+
+
+</header>
+
+<div id="posContainer" class="container">
+    <div class="menu"></div>
+    <div id="cartDiv" class="cart">
+        <h2>ตะกร้าสินค้า</h2>
+        <div id="cartItems"></div>
+        <p class="total">รวมทั้งหมด: <span id="total">0</span> บาท</p>
+        <button id="orderBtn" onclick="orderFood()">สั่งอาหาร</button>
+    </div>
+</div>
+
+<div id="receiptDiv" class="receipt" style="display:none">
+    <h2>ใบเสร็จ</h2>
+    <p><span id="tableNumber"></span></p>
+    <div id="receiptItems"></div>
+    <p class="receipt-total">รวมสุทธิ: <span id="grandTotal">0</span> บาท</p>
+    <div id="qrcode"></div>
+    <button id="backBtn" onclick="backToPOS()">กลับเมนู</button>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

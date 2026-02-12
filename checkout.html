@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Checkout - สเต็กเด็กแนว สาขาสนามฟุตบอลไพรมารี่ ปลวกแดง</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+<header>
+    <h1>ใบเสร็จ POS สเต็กเด็กแนว</h1>
+</header>
+
+<div class="receipt">
+
+    <p>เลขโต๊ะ: <span id="tableNumber"></span></p>
+
+    <div id="receiptItems"></div>
+
+    <div class="receipt-summary">
+        <div>ส่วนลด: <span id="discount">0</span> บาท</div>
+        <div>VAT 7%: <span id="vat">0</span> บาท</div>
+        <div class="receipt-total">รวมสุทธิ: <span id="grandTotal">0</span> บาท</div>
+    </div>
+
+    <div id="qrcode" style="margin-top:15px;"></div>
+
+    <button onclick="printReceipt()">พิมพ์ใบเสร็จ</button>
+</div>
+
+<script src="checkout.js"></script>
+</body>
+</html>
